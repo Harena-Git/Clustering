@@ -1,2 +1,6 @@
 sudo systemctl start postgresql
 sudo -u postgres psql
+
+En analysant ce projet, peux-tu me dire
+quel est le but du projet ?
+MB : c'est un projet de clustering
