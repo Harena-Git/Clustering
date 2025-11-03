@@ -1,20 +1,15 @@
-CREATE DATABASE cluster_session ;
+-- Création de la base de données
+CREATE DATABASE cluster_session;
 
-create user 'cluster'@'%' identified by 'cluster';  
+-- Connexion à la base de données
+\c cluster_session;
 
-create user 'cluster'@'localhost' identified by 'cluster';  
+-- Création de la table des sessions
+CREATE TABLE php_session(
+    id VARCHAR(255) PRIMARY KEY,
+    data TEXT,
+    date_change TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
-GRANT ALL PRIVILEGES ON cluster_session.* to 'cluster'@'%';
-
-GRANT ALL PRIVILEGES ON cluster_session.* to 'cluster'@'localhost';
-
-exit;
-
-
-use cluster_session;
-
-create table if not exists php_session(
-    id VARCHAR(255) primary key,
-    data text ,
-    date_change timestamp default current_timestamp on update current_timestamp  
-) ;     
+-- Création d'un index pour améliorer les performances
+CREATE INDEX idx_php_session_date_change ON php_session(date_change);
