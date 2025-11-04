@@ -22,12 +22,12 @@ class MultiDb {
         $h1 = getenv('DB1_HOST') ?: getenv('DB_HOST') ?: '127.0.0.1';
         $n1 = getenv('DB1_NAME') ?: getenv('DB_NAME') ?: 'cluster_session_a';
         $u1 = getenv('DB1_USER') ?: getenv('DB_USER') ?: 'postgres';
-        $p1 = getenv('DB1_PASSWORD') ?: getenv('DB_PASSWORD') ?: '';
+        $p1 = getenv('DB1_PASSWORD') ?: getenv('DB_PASSWORD') ?: 'harena';
 
         $h2 = getenv('DB2_HOST') ?: '127.0.0.1';
         $n2 = getenv('DB2_NAME') ?: 'cluster_session_b';
         $u2 = getenv('DB2_USER') ?: 'postgres';
-        $p2 = getenv('DB2_PASSWORD') ?: '';
+        $p2 = getenv('DB2_PASSWORD') ?: getenv('DB_PASSWORD') ?: 'harena';
 
         try {
             $this->pdo1 = getPdoFromEnv($h1, $n1, $u1, $p1);
