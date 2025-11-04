@@ -1,6 +1,6 @@
 <?php
 require_once("dbSessionHandler.php");
-5
+
 session_start();
 
 $serveur = 'Serveur 2';
