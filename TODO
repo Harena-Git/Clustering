@@ -4,3 +4,19 @@ sudo -u postgres psql
 En analysant ce projet, peux-tu me dire
 quel est le but du projet ?
 MB : c'est un projet de clustering
+
+To chat :
+J'aimerai que tu apportes ces modifications dans ce Projet de clustering :
+Base de donnee (1) <-> proxy <-> web server (2) <-> proxy <-> http (3)
+Il y aura 2 de base de donnee(1), un master to master -> chaque modification fait dans l'autre base
+de donnee sera egalement executer dans l'autre base (postgres)
+Creer un interface web qui permet de :
+    - faire des modifications dans la base de donnee(creation, modification,suppression)
+    - voir les serveurs non fonctionnelles, creer un server
+Conditions :
+    - les modifications au niveaux de l'interface se feront directement dans les 2 bases (master to master)
+    - nous allons utiliser HA proxy (deja installer dans mon linux ubuntu) pour faire le processus
+    - base de donnee postgres seulement (donnes-moi une idee comment creer ces 2 bases pour le master to master)
+Caprices :
+    - montres-moi comment utiliser HA proxy
+    - exlpiques comment utiliser le serveur
