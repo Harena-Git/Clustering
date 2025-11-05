@@ -9,9 +9,13 @@ To chat :
 J'aimerai que tu me aides a creer un Projet de clustering sous linux ubuntu :
 Base de donnee (1) <-> proxy <-> web server (2) <-> proxy <-> http clients (3)
 Du cote base de donnee :
-Il y aura 2 de base de donnee(1), un master to master -> chaque modification fait dans l'autre base
+    Il y aura 2 de base de donnee(1), un master to master -> chaque modification fait dans l'autre base
 de donnee sera egalement executer dans l'autre base de donnee.
 Du cote web server (2) :
+    Il y aura 2 web server (2) qui vont se connecter aux 2 bases de donnee.
+Du cote http clients (3) :
+    Il y aura des clients http (3) qui vont se connecter aux 2 web server
+But du projet :
 Creer un interface web qui permet de :
     - faire des modifications dans la base de donnee(creation, modification,suppression)
     - voir les serveurs non fonctionnelles, creer un server

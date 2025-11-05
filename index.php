@@ -3,7 +3,7 @@ require_once("dbSessionHandler.php");
 
 session_start();
 
-$serveur = 'Serveur 2';
+$serveur = 'Serveur 2'; 
 
 if (isset($_POST['couleur']) && !empty($_POST['couleur'])) {
     $_SESSION['couleur_preferee'] = htmlspecialchars($_POST['couleur']);
