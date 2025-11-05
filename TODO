@@ -23,10 +23,6 @@ Conditions :
     - les modifications au niveaux de l'interface se feront directement dans les 2 bases (master to master)
     - nous allons utiliser HA proxy (deja installer dans mon linux ubuntu) pour faire le processus
     - base de donnee postgres seulement (donnes-moi une idee comment creer ces 2 bases pour le master to master)
-Caprices :
-    - montres-moi comment utiliser HA proxy
-    - exlpiques comment utiliser le serveur
-
 interface : 
     - tsy mila mikitika conf haproxy
     - eo ambon'ny base misy ha proxy
