@@ -112,19 +112,19 @@ Le code actuel lit ces variables d'environnement pour la connexion DB. Exemple :
 export DB1_HOST=127.0.0.1
 export DB1_NAME=cluster_session_a
 export DB1_USER=webuser
-export DB1_PASSWORD='change_me'
+export DB1_PASSWORD='harena'
 
 # DB B
 export DB2_HOST=127.0.0.1
 export DB2_NAME=cluster_session_b
 export DB2_USER=webuser
-export DB2_PASSWORD='change_me'
+export DB2_PASSWORD='harena'
 
 # Si vous avez besoin de config pour le gestionnaire de session existant
 export DB_HOST=127.0.0.1
 export DB_NAME=cluster_session_a
 export DB_USER=webuser
-export DB_PASSWORD='change_me'
+export DB_PASSWORD='harena'
 ```
 
 Placez ces exports dans votre shell ou dans un script `env.sh` puis sourcez-le :
