@@ -20,3 +20,6 @@ Conditions :
 Caprices :
     - montres-moi comment utiliser HA proxy
     - exlpiques comment utiliser le serveur
+
+interface : 
+    - tsy mila mikitika conf haproxy
