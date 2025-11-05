@@ -6,10 +6,12 @@ quel est le but du projet ?
 MB : c'est un projet de clustering
 
 To chat :
-J'aimerai que tu apportes ces modifications dans ce Projet de clustering :
-Base de donnee (1) <-> proxy <-> web server (2) <-> proxy <-> http (3)
+J'aimerai que tu me aides a creer un Projet de clustering sous linux ubuntu :
+Base de donnee (1) <-> proxy <-> web server (2) <-> proxy <-> http clients (3)
+Du cote base de donnee :
 Il y aura 2 de base de donnee(1), un master to master -> chaque modification fait dans l'autre base
-de donnee sera egalement executer dans l'autre base (postgres)
+de donnee sera egalement executer dans l'autre base de donnee.
+Du cote web server (2) :
 Creer un interface web qui permet de :
     - faire des modifications dans la base de donnee(creation, modification,suppression)
     - voir les serveurs non fonctionnelles, creer un server
